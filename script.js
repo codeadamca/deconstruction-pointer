@@ -15,6 +15,7 @@ fetch("images.json")
 
 // Create a reference to the screen DIV.
 let screen = document.getElementById("screen");
+let credit_tracking = document.getElementById("credit_tracking");
 let credit_link = document.getElementById("credit_link");
 
 for (let i = 0; i < 4; i++) {
@@ -40,7 +41,9 @@ screen.addEventListener("mousemove", (e) => {
   credit_link.href = "javascript: return false;";
   credit_link.textContent = "";
 
-  // If stopped for halkf a second, run the MOUSE_STOPPED
+  credit_tracking.style.display = "inline";
+
+  // If stopped for half a second, run the MOUSE_STOPPED
   // function.
   clearTimeout(timer);
   timer = setTimeout(mouse_stopped, 1000, e);
@@ -55,17 +58,21 @@ function mouse_stopped(e) {
   let x = e.clientX - rect.left;
   let y = e.clientY - rect.top;
 
-  // Round it in groups of 80
-  x = Math.floor(x / button_width);
-  y = Math.floor(y / button_height);
-  console.log(x + " " + y);
+  if (x >= 0 && x <= 1280 && y >= 0 && y <= 720) {
+    // Round it in groups of 80
+    x = Math.floor(x / button_width);
+    y = Math.floor(y / button_height);
+    console.log(x + " " + y);
 
-  // Assign the corresponding image, randomly if there are
-  // more than one.
-  let random = Math.floor(Math.random() * images[y][x].length);
-  screen.style.background = "url(images/" + images[y][x][random].image + ")";
+    // Assign the corresponding image, randomly if there are
+    // more than one.
+    let random = Math.floor(Math.random() * images[y][x].length);
+    screen.style.background = "url(images/" + images[y][x][random].image + ")";
 
-  credit_link.href =
-    "https://www.pexels.com/photo/" + images[y][x][random].id + "/";
-  credit_link.textContent = "Photo Credit: " + images[y][x][random].credit;
+    credit_link.href =
+      "https://www.pexels.com/photo/" + images[y][x][random].id + "/";
+    credit_link.textContent = "Photo Credit: " + images[y][x][random].credit;
+  }
+
+  credit_tracking.style.display = "none";
 }
