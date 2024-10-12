@@ -6,7 +6,8 @@
     [
       {
         "image": "quad_cat.png",
-        "credit": "Photo by Pixabay: https://www.pexels.com/photo/assorted-color-kittens-45170/"
+        "credit": "Pixabay",
+        "id": "assorted-color-kittens-45170"
       }
     ],
     [],
@@ -18,7 +19,8 @@
     [
       {
         "image": "quad_cat.png",
-        "credit": "Photo by Pixabay: https://www.pexels.com/photo/assorted-color-kittens-45170/"
+        "credit": "Pixabay",
+        "id": "assorted-color-kittens-45170"
       }
     ],
     [],
@@ -26,20 +28,23 @@
     [
       {
         "image": "double_goat.png",
-        "credit": "Photo by Ruel Madelo: https://www.pexels.com/photo/two-white-goat-kids-933648/"
+        "credit": "Ruel Madelo",
+        "id": "two-white-goat-kids-933648"
       }
     ],
     [],
     [
       {
         "image": "quad_cat.png",
-        "credit": "Photo by Pixabay: https://www.pexels.com/photo/assorted-color-kittens-45170/"
+        "credit": "Pixabay",
+        "id": "assorted-color-kittens-45170"
       }
     ],
     [
       {
         "image": "double_goat.png",
-        "credit": "Photo by Ruel Madelo: https://www.pexels.com/photo/two-white-goat-kids-933648/"
+        "credit": "Ruel Madelo",
+        "id": "two-white-goat-kids-933648"
       }
     ],
     []
@@ -50,14 +55,16 @@
     [
       {
         "image": "goat_tilt.png",
-        "credit": "Photo by Lisa Fotios: https://www.pexels.com/photo/white-goat-2102801/"
+        "credit": "Lisa Fotios",
+        "id": "white-goat-2102801="
       }
     ],
     [],
     [
       {
         "image": "white_cat.png",
-        "credit": "Photo by Pixabay: https://www.pexels.com/photo/white-and-grey-kitten-on-brown-and-black-leopard-print-textile-45201/"
+        "credit": "Pixabay",
+        "id": "white-and-grey-kitten-on-brown-and-black-leopard-print-textile-45201"
       }
     ],
     [],
@@ -65,7 +72,8 @@
     [
       {
         "image": "quad_cat.png",
-        "credit": "Photo by Pixabay: https://www.pexels.com/photo/assorted-color-kittens-45170/"
+        "credit": "Pixabay",
+        "id": "assorted-color-kittens-45170"
       }
     ]
   ],
@@ -74,7 +82,8 @@
     [
       {
         "image": "double_goat_2.png",
-        "credit": "Photo by Villager  Boy: https://www.pexels.com/photo/two-brown-and-black-goats-2926575/"
+        "credit": "Villager Boy",
+        "id": "two-brown-and-black-goats-2926575"
       }
     ],
     [],
@@ -85,7 +94,8 @@
     [
       {
         "image": "double_goat_2.png",
-        "credit": "Photo by Villager  Boy: https://www.pexels.com/photo/two-brown-and-black-goats-2926575/"
+        "credit": "Villager Boy",
+        "id": "two-brown-and-black-goats-2926575"
       }
     ]
   ]

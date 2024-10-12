@@ -15,6 +15,7 @@ fetch("images.json")
 
 // Create a reference to the screen DIV.
 let screen = document.getElementById("screen");
+let credit_link = document.getElementById("credit_link");
 
 for (let i = 0; i < 4; i++) {
   for (let j = 0; j < 8; j++) {
@@ -33,10 +34,16 @@ for (let i = 0; i < 4; i++) {
 screen.addEventListener("mousemove", (e) => {
   console.log("moved");
 
+  // Remove background image
+  screen.style.background = "none";
+
+  credit_link.href = "javascript: return false;";
+  credit_link.textContent = "";
+
   // If stopped for halkf a second, run the MOUSE_STOPPED
   // function.
   clearTimeout(timer);
-  timer = setTimeout(mouse_stopped, 500, e);
+  timer = setTimeout(mouse_stopped, 1000, e);
 });
 
 // Define the MOUSE_STOP function.
@@ -57,4 +64,8 @@ function mouse_stopped(e) {
   // more than one.
   let random = Math.floor(Math.random() * images[y][x].length);
   screen.style.background = "url(images/" + images[y][x][random].image + ")";
+
+  credit_link.href =
+    "https://www.pexels.com/photo/" + images[y][x][random].id + "/";
+  credit_link.textContent = "Photo Credit: " + images[y][x][random].credit;
 }
